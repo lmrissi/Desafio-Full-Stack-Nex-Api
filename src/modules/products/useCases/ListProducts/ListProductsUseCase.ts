@@ -11,7 +11,7 @@ class ListProductsUseCase {
         
         return await Product.findAll({
             where: {
-                user_id: Number(user_id)
+                userId: Number(user_id)
             }
         }).then((product) => product)
         .catch((err) => {
