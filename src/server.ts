@@ -1,4 +1,13 @@
 import express from "express";
+import db from './db';
+
+(async () => {
+    try {
+        return await db.sync();
+    } catch (error) {
+        return error
+    }
+})();
 
 const app = express()
 
