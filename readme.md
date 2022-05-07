@@ -1,0 +1,1 @@
+tentar usar o middleware validateJwtToken
