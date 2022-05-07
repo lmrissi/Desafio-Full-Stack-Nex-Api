@@ -21,7 +21,7 @@ const Product = db.define('products', {
         allowNull: false,
         type: Sequelize.FLOAT
     },
-    user_id: {
+    userId: {
         allowNull: false,
         type: Sequelize.INTEGER,
     }
