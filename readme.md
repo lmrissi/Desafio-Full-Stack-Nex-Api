@@ -33,12 +33,12 @@ aplicação utilizando JWT. Já na home, o backend deve retornar para o usuário
 - Código maciço com bons tratamentos de erros e bugs
 
 ## Instruções para executar o projeto
-1. Clone o repositório: git clone https://github.com/lmrissi/Desafio-Full-Stack-Nex-Api.git
-2. Instale as dependências: npm i
-3. Suba o docker para criar o banco de dados: docker-compose up -d
+1. Clone o repositório: <code>git clone https://github.com/lmrissi/Desafio-Full-Stack-Nex-Api.git</code>
+2. Instale as dependências: <code>npm i</code>
+3. Suba o docker para criar o banco de dados: <code>docker-compose up -d</code>
 4. Crie o arquivo .env com as variáveis de ambiente
-5. Crie as tabelas no banco de dados: npx sequelize-cli db:migrate
-6. Suba o servidor: npm run dev
+5. Crie as tabelas no banco de dados: <code>npx sequelize-cli db:migrate</code>
+6. Suba o servidor: <code>npm run dev</code>
 
 ## Endpoints disponíveis na API
 1. <code>/user</code>: 
