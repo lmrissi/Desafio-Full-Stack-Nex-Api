@@ -45,11 +45,13 @@ aplicação utilizando JWT. Já na home, o backend deve retornar para o usuário
     Enpoint para criação de usuários, aceita o método POST.
     Retorna o usuário criado. 
     Passar o seguinte payload no body da requisição:
+    <code>
     {
         "name": "nome do usuário",
         "email": "emaildousuario@provedor.com.br",
         "password": "senha do usuário"
     }
+    </code>
 
 2. <code>/login</code>: 
     Enpoint para autenticação de usuários, aceita o método POST.
@@ -64,7 +66,7 @@ aplicação utilizando JWT. Já na home, o backend deve retornar para o usuário
 
 3. <code>/product</code>:
     Enpoint para criação de produto, aceita o método POST.
-    Necessário passar o token da requisição nos headers na key Authorization
+    Necessário passar o token da requisição nos headers na key Authorization.
     Retorna o produto criado.
     Passar o seguinte payload no body da requisição:
     <code>
@@ -77,5 +79,5 @@ aplicação utilizando JWT. Já na home, o backend deve retornar para o usuário
 
 3. <code>/products</code>: 
     Enpoint para listagem dos produtos de um usuário, aceita o método GET.
-    Necessário passar o token da requisição nos headers na key Authorization
+    Necessário passar o token da requisição nos headers na key Authorization.
     Retorna o produto criado.
