@@ -1,6 +1,5 @@
 import { verify } from "jsonwebtoken";
 import { injectable } from "tsyringe";
-import { AppError } from "../../../../errors/AppError";
 import { Product } from "../../entities/Product";
 
 @injectable()
@@ -14,6 +13,9 @@ class ListProductsUseCase {
             where: {
                 user_id: Number(user_id)
             }
+        }).then((product) => product)
+        .catch((err) => {
+            return err
         })
     }
 }
