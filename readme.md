@@ -41,7 +41,7 @@ aplicação utilizando JWT. Já na home, o backend deve retornar para o usuário
 6. Suba o servidor: npm run dev
 
 ## Endpoints disponíveis na API
-1. <code>/user<code>: 
+1. <code>/user</code>: 
     Enpoint para criação de usuários, aceita o método POST.
     Retorna o usuário criado. 
     Passar o seguinte payload no body da requisição:
@@ -51,7 +51,7 @@ aplicação utilizando JWT. Já na home, o backend deve retornar para o usuário
         "password": "senha do usuário"
     }
 
-2. <code>/login<code>: 
+2. <code>/login</code>: 
     Enpoint para autenticação de usuários, aceita o método POST.
     Retorna um token jwt e os dados do usuário.
     Passar o seguinte payload no body da requisição:
@@ -62,7 +62,7 @@ aplicação utilizando JWT. Já na home, o backend deve retornar para o usuário
     }
     </code>
 
-3. <code>/product<code>:
+3. <code>/product</code>:
     Enpoint para criação de produto, aceita o método POST.
     Necessário passar o token da requisição nos headers na key Authorization
     Retorna o produto criado.
@@ -75,7 +75,7 @@ aplicação utilizando JWT. Já na home, o backend deve retornar para o usuário
     }
     </code>
 
-3. <code>/products<code>: 
+3. <code>/products</code>: 
     Enpoint para listagem dos produtos de um usuário, aceita o método GET.
     Necessário passar o token da requisição nos headers na key Authorization
     Retorna o produto criado.
