@@ -22,9 +22,9 @@ module.exports = {
             field: 'price',
             type: Sequelize.FLOAT
         },
-        user_id: {
+        userId: {
           allowNull: false,
-          field: 'user_id',
+          field: 'userId',
           references: { model: 'users', foreignKey: 'id' },
           type: Sequelize.INTEGER
         },
