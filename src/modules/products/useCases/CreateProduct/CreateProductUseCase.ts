@@ -15,7 +15,10 @@ class CreateProductUseCase {
             name: name,
             description: description,
             price: price,
-            user_id: user_id
+            userId: user_id
+        }).then((product) => product)
+        .catch((err) => {
+            return err
         })
     }
 }
