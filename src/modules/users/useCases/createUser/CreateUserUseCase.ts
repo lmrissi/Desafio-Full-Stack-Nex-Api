@@ -14,8 +14,12 @@ class CreateUserUseCase {
                     email: email,
                     password: passwordHash
                 })
+                .then((user) => user)
+                .catch((err) => {
+                    return err
+                })
             })
-            .catch(() => new AppError("Password must be a string"))
+            .catch(() => new AppError("Error on ecrypt password, please check if the password is a string"))
     }
 }
 
