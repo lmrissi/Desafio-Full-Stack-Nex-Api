@@ -41,11 +41,11 @@ class AuthenticationUseCase {
                     
                             return result
                         }
-                        return new AppError("Password is wrong", 400);         
+                        return new AppError("A senha está errada", 400);         
                     })
-                    .catch(() => new AppError("Password is invalid", 400))
+                    .catch(() => new AppError("Senha inválida", 400))
             })
-            .catch(() => new AppError("Username doesn't exists"))
+            .catch(() => new AppError("Este usuário não existe"))
     }
 }
 

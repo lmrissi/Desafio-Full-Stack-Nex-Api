@@ -19,7 +19,7 @@ class CreateUserUseCase {
                     return err
                 })
             })
-            .catch(() => new AppError("Error on ecrypt password, please check if the password is a string"))
+            .catch(() => new AppError("Erro ao criar a senha do usuário"))
     }
 }
 
